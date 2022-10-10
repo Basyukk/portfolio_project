@@ -1,0 +1,41 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .panel {
+        margin-top: 330px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .promo {
+        padding-top: 110px;
+        padding-bottom: 0;
+        &__sub {
+            font-size: 20px;
+        }
+        &__title {
+            font-size: 34px;
+            line-height: 44px;
+        }
+    }
+    .panel {
+        margin-top: 330px;
+        &__divider {
+            width: 64px;
+        }
+    }
+}

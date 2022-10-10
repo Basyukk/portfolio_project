@@ -1,0 +1,22 @@
+.panel {
+    margin-top: 430px;
+    max-width: 500px;
+    display: flex;
+
+    justify-content: space-between;
+    z-index: 3;
+    align-items: center;
+    &__divider {
+        width: 120px;
+        height: 3px;
+        background-color: #fff;
+    }
+    &__text {
+        color: #fff;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    img {
+        width: 30px;
+    }
+}
