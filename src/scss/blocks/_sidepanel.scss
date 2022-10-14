@@ -1,6 +1,9 @@
 .panel {
-    margin-top: 430px;
-    max-width: 500px;
+    position: absolute;
+    bottom: 40px;
+    margin-top: 20px;
+    // margin-top: 430px;
+    width: 450px;
     display: flex;
 
     justify-content: space-between;

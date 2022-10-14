@@ -1,0 +1,107 @@
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 21px;
+    width: 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+    }
+    .long {
+        width: 36px;
+    }
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s all;
+    &.active {
+        visibility: visible;
+        opacity: 1;
+        left: 0;
+    }
+    &__block {
+        padding-top: 140px;
+        position: relative;
+        z-index: 10;
+        // left: -100%;
+        width: 345px;
+        background-color: $main-color;
+        height: 100%;
+        transition: 0.6s all;
+        padding-left: 40px;
+    }
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+    &__list {
+        padding-left: 35px;
+    }
+    &__link {
+        position: relative;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 15px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: -35px;
+            top: 9px;
+            height: 15px;
+            width: 15px;
+            border: 1px solid #015;
+            border-radius: 100%;
+            transition: 0.6s all;
+        }
+        &:hover {
+            &::before {
+                background-color: #fff;
+                border: none;
+            }
+        }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            // letter-spacing: 1.4px;
+        }
+    }
+    &__social {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px;
+        position: absolute;
+        bottom: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__overlay {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.65;
+    }
+}
